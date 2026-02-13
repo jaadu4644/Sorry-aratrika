@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorry Aratrika ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .page {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* First Page */
+        #page1 {
+            background-color: pink;
+            color: white;
+            position: relative;
+        }
+
+        #page1::before {
+            content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+            position: absolute;
+            font-size: 40px;
+            opacity: 0.2;
+            width: 100%;
+            height: 100%;
+            line-height: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            z-index: 1;
+        }
+
+        .arrow {
+            font-size: 40px;
+            margin-top: 40px;
+            cursor: pointer;
+            animation: bounce 1s infinite;
+            z-index: 1;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(10px); }
+        }
+
+        /* Second Page */
+        #page2 {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: white;
+            padding: 30px;
+            display: none;
+            overflow-y: auto;
+        }
+
+        #page2 p {
+            max-width: 90%;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Page -->
+    <div class="page" id="page1">
+        <h1>Sorry Aratrika 💕</h1>
+        <div class="arrow" onclick="nextPage()">⬇️</div>
+    </div>
+
+    <!-- Second Page -->
+    <div class="page" id="page2">
+        <p>
+            Aratrika, I know I said so many wrong things to you. At that time I was very depressed because of everything that happened to you because of me. It still haunts me when I think about how people disrespected you and said things against me that must have hurt you so much. I never imagined something like that would happen to you because of me, and I feel terrible that you had to go through all of that.
+            <br><br>
+            I know I made many mistakes when I said we should break up. I said those things because I was depressed and scared that I might treat you badly. I never understood why you chose me over so many other boys when you had many options, but you still chose me. I am truly grateful that I was your boyfriend.
+            <br><br>
+            Right now, I don’t know what is going on in your mind or how you will react when you read this. But all I want to say is sorry, because that’s all I can say from my heart. If I were there in Kolkata, I would kneel down in front of you and apologize for every single mistake I made during our relationship.
+            <br><br>
+            Honestly, I miss our relationship so much, and I miss you too. But I am scared of relationships now because I never want the other person to be disrespected or hear bad things because of me. All I ever wanted was to treat you the way you deserve, to give you the love you deserve, and to treat you even better than your family treats you. But in all of that, I failed.
+            <br><br>
+            I am truly sorry for everything, Aratrika.  
+            Really sorry ❤️
+        </p>
+    </div>
+
+    <script>
+        function nextPage() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "flex";
+        }
+    </script>
+
+</body>
+</html>
